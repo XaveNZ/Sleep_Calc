@@ -81,7 +81,7 @@ def create_account():
     # Check if the password contains at least one uppercase letter and one number
     if not re.search(r'[A-Z]', password) or not re.search(r'\d', password):
         message_label = ttk.Label(root, text=
-                            "Password must contain at least one uppercase letter and one number.",
+                            "Password must contain at least one\n uppercase letter and one number.",
                             foreground="red", background="Light blue", font=('Arial', 12, 'bold'))
         message_label.grid(row=8, padx=10, pady=5, columnspan=2)
         return
